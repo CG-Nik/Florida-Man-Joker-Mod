@@ -35,8 +35,8 @@ local the_j = {
     calculate = function(self,card,context)
         if context.individual and context.cardarea == G.play and context.other_card then
             if context.other_card.config.center == G.P_CENTERS.c_base and not context.other_card.ability.flor_disabled_for then
-                context.other_card:juice_up(0.3, 0.3)
                 context.other_card.ability.flor_disabled_for = {rounds = card.ability.extra.rounds+2, effect = "enhance", lvl = nil}
+				context.other_card:juice_up(0.3, 0.3)
             end              
         end
     end
@@ -56,6 +56,7 @@ function ease_round(mod)
                         local valid_enhancements = get_current_pool("Enhanced")
                         local _enhancement = pseudorandom_element(valid_enhancements, pseudoseed('the_j'..G.GAME.round_resets.ante))
                         other_card:set_ability(G.P_CENTERS[_enhancement], nil, true)
+						other_card:juice_up(0.0, 0.0)
                     end
                     other_card.ability.flor_disabled_for = nil
                 end
