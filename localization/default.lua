@@ -127,13 +127,13 @@ return {
 			    text = {
 					"Scoring a {C:attention}face card{} debuffs",
 					"it for {C:attention}#2#-#3#{} rounds",
-					"and gives {C:money}+$#1#{} per {C:attention}round{}"
+					"and gives {C:money}+$#1#{} per {C:attention}round{}",
 					"Gain {C:money}$#1#{} per {C:attention}round{}",
 					"{C:inactive}(Currently {C:money}$#4#{C:inactive}){}",
 				    "{s:0.5} {}",
-				    "{B:1,C:white,s:0.75,E:1}Code: RattlingSnow",
-				    "{B:1,C:white,s:0.75,E:1}Art: gfsgfsgdsgf",
-				    "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				    "{B:1,C:white,s:0.75,E:1}Code: RattlingSnow{}",
+				    "{B:1,C:white,s:0.75,E:1}Art: gfsgfsgdsgf{}",
+				    "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis{}"
 			    },
 			},
 			j_flor_the_j = {
