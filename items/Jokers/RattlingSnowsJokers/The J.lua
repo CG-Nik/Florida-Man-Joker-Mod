@@ -56,7 +56,6 @@ function ease_round(mod)
                         local valid_enhancements = get_current_pool("Enhanced")
                         local _enhancement = pseudorandom_element(valid_enhancements, pseudoseed('the_j'..G.GAME.round_resets.ante))
                         other_card:set_ability(G.P_CENTERS[_enhancement], nil, true)
-						other_card:juice_up(0.0, 0.0)
                     end
                     other_card.ability.flor_disabled_for = nil
                 end
